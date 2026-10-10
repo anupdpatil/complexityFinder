@@ -56,7 +56,7 @@ export function App() {
     const reader = new FileReader(); reader.onload = () => setCode(String(reader.result)); reader.readAsText(file);
   }
   return <main>
-    <section className="hero"><span className="eyebrow">STATIC CODE ANALYSIS</span><h1>See the cost behind<br />your code.</h1></section>
+    <section className="hero"><span className="eyebrow">STATIC CODE ANALYSIS</span><h1>Complexity Finder</h1></section>
     <section className="workspace">
       <div className="editor-card">
         <div className="toolbar"><strong>Source code</strong><label className="upload">Upload file <input ref={fileRef} onChange={chooseFile} type="file" accept=".js,.jsx,.ts,.tsx,.py,.java,.c,.cpp,.cs,.go,.rs,.txt" /></label></div>
